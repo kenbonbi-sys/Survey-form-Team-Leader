@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Raw input - Cuộc đối thoại Tổng kết Hiệu quả Công việc</title>
+  <style>
+    :root {
+      --momo-pink: #A50064;
+      --momo-light: #FFE6F1;
+      --momo-soft: #FF9396;
+      --bg: #FDF7FB;
+      --text-main: #2B0B1F;
+      --text-sub: #6B4D63;
+      --card-bg: #FFFFFF;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: radial-gradient(circle at top left, #FFE6F1 0, #FDF7FB 40%, #ffffff 100%);
+      margin: 0;
+      padding: 24px;
+      color: var(--text-main);
+    }
+    .page {
+      width: 210mm;
+      max-width: 100%;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.92);
+      border-radius: 16px;
+      padding: 20mm 18mm;
+      box-shadow: 0 10px 30px rgba(165,0,100,0.08);
+      border: 1px solid rgba(165,0,100,0.12);
+      backdrop-filter: blur(6px);
+    }
+    h1 {
+      font-size: 22px;
+      margin: 0 0 6px 0;
+      color: var(--momo-pink);
+      letter-spacing: 0.02em;
+    }
+    .subtitle {
+      font-size: 12px;
+      color: var(--text-sub);
+      margin-bottom: 14px;
+    }
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    .pill {
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--momo-light);
+      color: var(--momo-pink);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .note {
+      font-size: 10px;
+      color: var(--text-sub);
+      margin-bottom: 18px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      background: #FFF8FC;
+      border: 1px dashed rgba(165,0,100,0.3);
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 10px 12px;
+      border: 1px solid rgba(165,0,100,0.18);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.02);
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, rgba(165,0,100,0.06), transparent 35%, transparent 65%, rgba(255,147,150,0.06));
+      pointer-events: none;
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+      position: relative;
+      z-index: 1;
+    }
+    .chip {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: var(--momo-pink);
+      color: white;
+      font-weight: 600;
+    }
+    .block {
+      position: relative;
+      z-index: 1;
+      padding: 8px 9px;
+      border-radius: 10px;
+      margin-top: 4px;
+    }
+    .block-q1 {
+      background: linear-gradient(135deg, #FFF4FA, #FFE6F1);
+      border-left: 3px solid var(--momo-pink);
+    }
+    .block-q2 {
+      background: #FFF9F5;
+      border-left: 3px solid var(--momo-soft);
+      margin-top: 6px;
+    }
+    .block-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-sub);
+      margin-bottom: 2px;
+    }
+    .block-text {
+      font-size: 11px;
+      line-height: 1.5;
+      white-space: normal;
+    }
+    .block-text br {
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>Raw input từ form khảo sát</h1>
+    <div class="subtitle">Cuộc đối thoại Tổng kết Hiệu quả Công việc</div>
+    <div class="pill-row">
+      <div class="pill">khó khăn khi đánh giá</div>
+      <div class="pill">tăng lương &amp; thưởng</div>
+      <div class="pill">động lực &amp; career path</div>
+      <div class="pill">kỹ năng feedback</div>
+    </div>
+    <div class="note">
+      Tất cả nội dung dưới đây là <strong>nguyên văn câu trả lời của người tham gia</strong>, chỉ bỏ ký hiệu đánh số, không chỉnh sửa hay diễn giải thêm.
+    </div>
+    <div class="cards">
+      
+      <div class="card">
+        <div class="card-header">
+          <div class="chip">Phiếu trả lời 1</div>
+        </div>
+        <div class="block block-q1">
+          <div class="block-label">Khó khăn / Băn khoăn</div>
+          <div class="block-text">Làm nhiều hay ít, kết quả cuối cùng đôi khi giống nhau.<br>Dễ mất động lực khi nỗ lực không được đo lường cụ thể</div>
+        </div>
+        
+        <div class="block block-q2">
+          <div class="block-label">Gợi ý / Mong đợi hỗ trợ</div>
+          <div class="block-text">Lắng nghe thật sự, phản hồi cụ thể, đặt mục tiêu rõ ràng.</div>
+        </div>
+        
+      </div>
+    
+      <div class="card">
+        <div class="card-header">
+          <div class="chip">Phiếu trả lời 2</div>
+        </div>
+        <div class="block block-q1">
+          <div class="block-label">Khó khăn / Băn khoăn</div>
+          <div class="block-text">kết quả về biz chưa như expect<br>việc tăng lương, thưởng<br>định hướng công việc</div>
+        </div>
+        
+      </div>
+    
+      <div class="card">
+        <div class="card-header">
+          <div class="chip">Phiếu trả lời 3</div>
+        </div>
+        <div class="block block-q1">
+          <div class="block-label">Khó khăn / Băn khoăn</div>
+          <div class="block-text">Bản thân Team Lead không phải người có quyền quyết định cuối cùng về việc tăng lương/thưởng cho member. Vậy nên giao tiếp thế nào để vẫn gây dựng đươc motivation này mà không mang tính hứa hẹn?<br>Làm sao để biết chính xác động lực đi làm của nhân viên (đối với member chưa có định hướng, động lực rõ ràng)?<br>Thiếu framework thực tế để review + định hướng career path cho member hiệu quả</div>
+        </div>
+        
+        <div class="block block-q2">
+          <div class="block-label">Gợi ý / Mong đợi hỗ trợ</div>
+          <div class="block-text">trao đổi thẳng thắn, chân thành, thấu hiểu đối phương</div>
+        </div>
+        
+      </div>
+    
+      <div class="card">
+        <div class="card-header">
+          <div class="chip">Phiếu trả lời 4</div>
+        </div>
+        <div class="block block-q1">
+          <div class="block-label">Khó khăn / Băn khoăn</div>
+          <div class="block-text">Khó đánh giá khách quan khi mục tiêu thay đổi trong năm.<br><br>Khó để đưa ra những bad reviews 1 cách tinh tế</div>
+        </div>
+        
+        <div class="block block-q2">
+          <div class="block-label">Gợi ý / Mong đợi hỗ trợ</div>
+          <div class="block-text">Clear expectation về tone, mood của cuộc trò chuyện và cách leader sẽ đưa ra review</div>
+        </div>
+        
+      </div>
+    
+      <div class="card">
+        <div class="card-header">
+          <div class="chip">Phiếu trả lời 5</div>
+        </div>
+        <div class="block block-q1">
+          <div class="block-label">Khó khăn / Băn khoăn</div>
+          <div class="block-text">Khó để nói ra các bạn vẫn chưa đạt được hiệu quả công việc để được promote hoặc tăng lương. Chính sách công ty nên các bạn khó tăng lương như mức bạn muốn Team member đánh giá cao năng lực của mình Nhân viên luôn nhìn vào các không tốt mà cty mang lại hơn là những gì có được.  </div>
+        </div>
+        
+        <div class="block block-q2">
+          <div class="block-label">Gợi ý / Mong đợi hỗ trợ</div>
+          <div class="block-text">Tình huống cụ thể cho thầy Hân làm người leader còn các bạn học viên là team member </div>
+        </div>
+        
+      </div>
+    
+      <div class="card">
+        <div class="card-header">
+          <div class="chip">Phiếu trả lời 6</div>
+        </div>
+        <div class="block block-q1">
+          <div class="block-label">Khó khăn / Băn khoăn</div>
+          <div class="block-text">khó giải thích</div>
+        </div>
+        
+        <div class="block block-q2">
+          <div class="block-label">Gợi ý / Mong đợi hỗ trợ</div>
+          <div class="block-text">chỉ nói kết quả công việc</div>
+        </div>
+        
+      </div>
+    
+      <div class="card">
+        <div class="card-header">
+          <div class="chip">Phiếu trả lời 7</div>
+        </div>
+        <div class="block block-q1">
+          <div class="block-label">Khó khăn / Băn khoăn</div>
+          <div class="block-text">Hạn chế của dữ liệu đánh giá năng lực chuyên môn<br>Hạn chế định hướng phát triển soft skill và đo lường</div>
+        </div>
+        
+      </div>
+    
+      <div class="card">
+        <div class="card-header">
+          <div class="chip">Phiếu trả lời 8</div>
+        </div>
+        <div class="block block-q1">
+          <div class="block-label">Khó khăn / Băn khoăn</div>
+          <div class="block-text">- Sự đồng thuận về đánh giá của bản thân và nhận xét của cấp dưới<br>- Làm sao feedback mang tính xây dựng &amp; không quá nặng nề, dù nhân viên không đạt được nhận xét như bạn tự đánh giá?</div>
+        </div>
+        
+        <div class="block block-q2">
+          <div class="block-label">Gợi ý / Mong đợi hỗ trợ</div>
+          <div class="block-text">Bắt đầu buổi meeting như thế nào để không khí thoải mái hơn?</div>
+        </div>
+        
+      </div>
+    
+    </div>
+  </div>
+</body>
+</html>
